@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+        This AndroidManifest.xml will contain all of the elements that should be shared across the
+        Android Auto and Automotive OS versions of the app, such as the CarAppService <service> element
+    -->
+    <uses-permission android:name="androidx.car.app.MAP_TEMPLATES" />
+
+    <application>
+        <meta-data
+            android:name="androidx.car.app.minCarApiLevel"
+            android:value="1" />
+
+        <service
+            android:name="com.p3.offices.carappservice.PlacesCarAppService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="androidx.car.app.CarAppService" />
+                <category android:name="androidx.car.app.category.POI" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

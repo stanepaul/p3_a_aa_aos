@@ -1,0 +1,8 @@
+<resources>
+    <string name="warning_no_places_available">No places to show</string>
+    <string name="title">P3 Offices in Europe</string>
+    <string name="location">Location</string>
+    <string name="description">Description</string>
+    <string name="warning_office_not_found">Office not found</string>
+    <string name="warning_emulator_navigation">Emulator doesn\'t have a navigation app</string>
+</resources>
